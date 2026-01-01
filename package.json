@@ -2,6 +2,7 @@
   "name": "iconclay-studio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dovvnloading.github.io/Icon-Clay-Studio",
   "type": "module",
   "scripts": {
     "dev": "vite",
