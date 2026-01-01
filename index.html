@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IconClay Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #1e1e1e;
+        color: #e5e5e5;
+        overflow: hidden; /* App-like feel */
+      }
+      /* Custom Scrollbar for panels */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #2a2a2a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #444; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+      .canvas-grid {
+        background-size: 20px 20px;
+        background-image:
+          linear-gradient(to right, #333 1px, transparent 1px),
+          linear-gradient(to bottom, #333 1px, transparent 1px);
+      }
+      .canvas-grid-dot {
+        background-size: 20px 20px;
+        background-image: radial-gradient(circle, #333 1px, transparent 1px);
+      }
+      .checkerboard {
+        background-color: #1e1e1e;
+        background-image:
+          linear-gradient(45deg, #2a2a2a 25%, transparent 25%),
+          linear-gradient(-45deg, #2a2a2a 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #2a2a2a 75%),
+          linear-gradient(-45deg, transparent 75%, #2a2a2a 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+      }
+
+      /* Hide Spinners */
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+      }
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+      
+      /* Drag Cursors */
+      .cursor-ns-resize {
+        cursor: ns-resize;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "heroicons-outline": "https://esm.sh/@heroicons/react@2.1.1/24/outline?external=react",
+    "heroicons-solid": "https://esm.sh/@heroicons/react@2.1.1/24/solid?external=react",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "html-to-image": "https://esm.sh/html-to-image@1.11.11",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
