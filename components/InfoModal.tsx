@@ -347,7 +347,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
                           <Twitter size={18} />
                           <span>Follow</span>
                        </a>
-                       <a href="https://dovvnloading.github.io" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-[#252525] hover:bg-[#333] rounded-full border border-[#333] text-gray-300 hover:text-white transition-all">
+                       <a href="https://matt-wesney.github.io/website/" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-[#252525] hover:bg-[#333] rounded-full border border-[#333] text-gray-300 hover:text-white transition-all">
                           <Globe size={18} />
                           <span>Website</span>
                        </a>
